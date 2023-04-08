@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href={{url_for('static', filename='css/bootstrap.css')}}>
+    <link rel="stylesheet" href={{url_for('static', filename='css/bootstrap.css.map')}}>
+    <link rel="stylesheet" href={{url_for('static', filename='css/style.css')}}>
+    <script src="https://kit.fontawesome.com/cccad5d3d7.js" crossorigin="anonymous"></script>
+    <title>Твой личный тренер</title>
+</head>
+
+<body>
+  <!-- Navbar fixed -->
+  <nav id="navbar" class="navbar fixed-top navbar-light bg-light px-3">
+    <a class="navbar-brand" href="#"><img src="{{ url_for('static', filename='media/path477.png')}}" alt="logo_bakharevafit"></a>
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading1">Первый якорь</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading2">Второй якорь</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading3">Третий якорь</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://t.me/bakhareva_fit_bot" ><i class="fa-brands fa-telegram fa-xl"></i></a>
+        </li>
+      </ul>
+  </nav>
+  <br><br>
+  <!-- Карусель по центру-->
+  <!-- <div class="container"> -->
+    <!-- <div class="row"> -->
+      <!-- <div class="col align-self-center"> -->
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src={{ url_for('static', filename='media/main.jpg')}} class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий</span>
+          </button>
+        </div>
+
+      <!-- </div> -->
+    <!-- </div> -->
+  <!-- </div> -->
+ 
+        
+
+
+    <script src={{url_for('static', filename='js/bootstrap.min.js')}}></script>
+    <script src={{url_for('static', filename='js/bootstrap.min.js.map')}}></script>
+</body>
+</html>
